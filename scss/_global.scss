@@ -1,0 +1,129 @@
+.container {
+    max-width: 1176px;
+    margin-inline: 1.5rem;
+    // margin: 0 auto;
+    // padding: 0 15px;
+    @media screen and (max-width: 340px) {
+        margin-inline: 1rem;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-inline: auto;
+    }
+}
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+.a {
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+.section-title{
+    color: #fff;
+    font-size: 1.5625rem;
+    font-size: clamp(1.5625rem, 1.4144736842105263rem + 0.7401315789473684vw, 2.125rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.button {
+    padding: 9px 16px;
+    // padding: 7px 11px;
+    background: var(--black-color);
+    border-radius: 12px;
+}
+.heading {
+    color: var(--primary-color);
+    font-family: 'Seaweed Script', cursive;
+    font-size: 44px;
+    margin-bottom: 16px;
+
+}
+.text {
+    font-size: clamp(1rem, 0.9671052631578947rem + 0.1644736842105263vw, 1.125rem);
+    margin-bottom: 35px;
+    line-height: calc(30 / 18);
+    color: var(--gray1);
+    // width: 452px;
+}
+.title {
+    font-size: clamp(1.875rem, 1.513157894736842rem + 1.8092105263157896vw, 3.25rem);
+    text-align: center;
+    // margin: 0 auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.desc {
+    text-align: center;
+    color: var(--gray1);
+    font-size: clamp(0.875rem, 0.8421052631578947rem + 0.1644736842105263vw, 1rem);
+}
+.section-heading{
+    font-size: clamp(1.75rem, 1.5526315789473684rem + 0.9868421052631579vw, 2.5rem);
+    color: var(--primary-red);
+    text-align: center;
+    font-family: 'Seaweed Script', cursive;
+    margin-bottom: 1rem;
+}
+.text1 {
+    font-size: clamp(1rem, 0.9342105263157895rem + 0.3289473684210526vw, 1.25rem);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.desc1 {
+    color: var(--gray-color);
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: clamp(0.875rem, 0.8421052631578947rem + 0.1644736842105263vw, 1rem);
+}
+@media screen and (max-width: 340px) {
+    .section-heading{
+        margin-bottom: 0.5rem;
+    }
+    .title{
+        margin-bottom: 2rem;
+    }
+    .button{
+        padding: 9px 6px;
+    }
+}
+@media screen and (min-width: 340px) {
+    .nav__logo{
+        width: 90px;
+    }
+    .section-heading{
+        margin-bottom: 0.5rem;
+    }
+    
+    .title{
+        margin: 0 auto 2rem;
+    }
+}
+@media screen and (min-width: 575px) {
+    .section-heading{
+        margin-bottom: 0.5rem;
+    }
+    
+    .title{
+        margin: 0 auto 3rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .section{
+        padding: 7rem 0 2rem;
+    }
+    .title{
+        margin: 0 auto 4rem;
+        width: 589px;
+    }
+    .text{
+        width: 452px;
+    }
+
+}
+
+
+

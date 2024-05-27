@@ -1,0 +1,282 @@
+.home {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    padding-top: 6rem;
+    &-main {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &-sinup {
+        display: flex;
+        align-items: center;
+        gap: 0 12px;
+    }
+    &-imag {
+        text-decoration: none;
+        color: white;
+        
+    }
+    &-img {
+        transform: translateY(10px);
+    }
+    &-content {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    &-top {
+        // max-width: 515px;
+        position: relative;
+        text-align: center;
+    }
+    &-title {
+        margin-bottom: 22px;
+        font-weight: 700;
+        // width: 515px;
+        line-height: 1.25;
+        font-size: clamp(2rem, 1.506578947368421rem + 2.4671052631578947vw, 3.875rem);
+    }
+    &-inputs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 51px;
+        overflow: hidden;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    &__input{
+        position: relative;
+
+    }
+    &-text{
+        font-size: clamp(1rem, 0.9671052632rem + 0.1644736842vw, 1.125rem);
+        color: var(--gray1);
+        span {
+            color: red;
+        }
+    }
+    &-input {
+        border-radius: 15px 0px 0px 15px;
+        padding: 24px 94px 24px 16px;
+        border: 1px solid var(--green);
+        color: var(--gray3);
+        font-size: clamp(0.8125rem, 0.7796052631578947rem + 0.1644736842105263vw, 0.9375rem);
+    }
+    // &-auth {
+    //     transform: translateX(186px);
+    //     max-width: 711px;
+    // }
+    &-icon {
+        position: absolute;
+        // right: 14rem;
+        right: 2rem;
+        top: 1.55rem;
+    }   
+    &-right{
+        background: #fff;
+        border-radius: 10px;
+        padding: 4px 9px;
+        i{
+            color: #00BE4C;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+    
+    &-dost {
+        background: var(--green);
+        display: flex;
+        align-items: center;
+        column-gap: 0.75rem;
+        padding: 17px;
+        border-radius: 0 15px 15px 0;
+    }
+    &-actions {
+        color: white;
+
+    }
+    &-contents {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        column-gap: 0.5rem;
+    }
+    &-logo {
+        font-size: clamp(1.5625rem, 1.4144736842105263rem + 0.7401315789473684vw, 2.125rem);
+        font-weight: 700;
+    }
+    &-heading1 {
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        gap: 0 32px;
+        row-gap: 3rem;
+    }
+    &-icon1 {
+        display: flex;
+        align-items: center;
+        background: var(--white1);
+        border-radius: 24px;
+        padding: 1.5rem 30px 1.5rem 30px;
+        position: relative;
+    }
+    &-image-1 {
+        position: absolute;
+        top: -1.5rem;
+        right: 0rem;
+        &__img{
+            width: 114px;
+            height: 114px;
+        }
+
+    }
+    // &-start {
+    //     transform: translateY(-33px);
+    // }
+    &-bases {
+        font-size: clamp(1.125rem, 1.0263157894736843rem + 0.4934210526315789vw, 1.5rem);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+    &-base {
+        font-size: clamp(1rem, 0.9342105263157895rem + 0.3289473684210526vw, 1.25rem);
+        color: var(--gray4);
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+    &-container {
+        color: var(--primary-red);
+        font-weight: 600;
+    }
+    
+    @media screen and (max-width: 340px) {
+        &-heading{
+            margin-bottom: 10px;
+        }
+        &-title{
+            margin-bottom: 1rem;
+        }
+        &-inpus{
+            margin-bottom: 2rem;
+        }
+        &-contents {
+            margin-bottom: 3rem;
+            justify-content: center;
+        }
+        &-icon1{
+            width: 270px;
+        }
+        &-heading1{
+            justify-content: center;
+        }
+        &-contents{
+            margin-bottom: 2.5rem;
+        }
+        &-content{
+            margin-bottom: 3rem;
+        }
+    }
+    @media screen and (min-width: 340px) {
+        &-contents{
+            justify-content: center;
+        }
+        &-heading1{
+            justify-content: center;
+        }
+        &-icon1{
+            width: 250px;
+        }
+        &-contents{
+            margin-bottom: 4rem;
+        }
+        &-content{
+            margin-bottom: 3rem;
+        }
+    }
+    @media screen and (min-width: 575px) {
+        &-content {
+            width: 420px;
+            justify-content: center;
+            margin: 0 auto 3rem;
+        }
+        &-heading1{
+            grid-template-columns: repeat(2, max-content);
+        }
+        &-inputs{
+            flex-direction: row;
+            justify-content: center;
+        }
+        &-dost{
+            padding: 16px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &-content{
+            width: 580px;
+        }
+        
+        &-icon1{
+            width: 270px;
+        }
+        &-contents{
+            margin-bottom: 5.5rem;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 7rem 0 2rem;
+        &-contents{
+            justify-content: initial;
+        }
+        &-content{
+            width: unset;
+            flex-direction: row;
+        }
+        &-heading1{
+            grid-template-columns: repeat(3, max-content);
+            justify-content: initial;
+        }
+        &-top{
+            text-align: initial;
+        }
+        &-auth {
+            transform: translateX(23px);
+        }
+        &-contents{
+            justify-content: initial;
+        }
+        &-inputs{
+            justify-content: initial;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        &-heading1{
+            grid-template-columns: repeat(4, max-content);
+        }
+        &-top{
+            width: 515px;
+        }
+        &-auth{
+            transform: translateX(94px);
+        }
+        &-title{
+            width: 515px;
+        }
+    }
+    @media screen and (min-width: 1350px){
+        &-auth{
+            transform: translateX(130px);
+            width: 695px;
+        }
+    }
+    @media screen and (min-width: 1430px){
+        &-auth{
+            transform: translateX(170px);
+            width: 695px;
+        }
+    }
+    
+}

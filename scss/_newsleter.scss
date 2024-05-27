@@ -1,0 +1,93 @@
+.newsleter {
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 30px;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-main {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    // &-container {
+    //     max-width: 512px;
+    // }
+    &-point {
+        font-size: clamp(1.5625rem, 1.4473684210526316rem + 0.575657894736842vw, 2rem); //32px
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    &-desc {
+        color: var(--gray3);
+        margin-bottom: 80px;
+        font-size: clamp(0.8125rem, 0.7796052631578947rem + 0.1644736842105263vw, 0.9375rem);
+    }
+    &-desc1 {
+        color: var(--gray3);
+        font-size: clamp(1.375rem, 1.2763157894736843rem + 0.4934210526315789vw, 1.75rem); //28px
+        margin-bottom: 33px;
+    }
+    &-desc2 {
+        color: var(--gray3);
+    }
+    &-dev {
+        font-size: clamp(0.75rem, 0.7171052631578947rem + 0.1644736842105263vw, 0.875rem);
+        color: var(--green);
+        font-weight: 500;
+
+    }
+    &-drive {
+        font-size: clamp(0.8125rem, 0.7796052631578947rem + 0.1644736842105263vw, 0.9375rem);
+        margin-bottom: 19px;
+        font-weight: 500;
+    }
+    &-Discover {
+        margin-bottom: 53px;
+
+    }
+    &-list {
+        border-bottom: 1px solid var(--grayf0);
+    }
+    &-image {
+        transform: translateY(-35px);
+    }
+    // &-listt {
+    //     // transform: translateY(-9px);
+    // }
+    @media screen and (max-width: 340px) {
+        &-desc{
+            margin-bottom: 40px;
+        }
+        &-warning {
+            margin-top: 3rem;
+        }
+        &-Discover {
+            margin-bottom: 2rem;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &-main {
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &-content {
+            width: 512px;
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &-main {
+            width: 1024px;
+            margin: 0 auto;
+        }
+    }
+    
+}

@@ -1,0 +1,102 @@
+.footer {
+    padding: 67px 0 0;
+    background-color: var(--grayf8);
+    &-data {
+        // grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        gap: 0 117px;
+        margin-bottom: 59px;
+    }
+    &-image {
+        margin-bottom: 35px;
+    }
+    &-link {
+        list-style: none;
+        margin-bottom: 17px;
+    }
+    &-item {
+        font-weight: 400;
+        font-size: clamp(0.813rem, 0.7637894736842105rem + 0.2460526315789474vw, 1rem);
+        color: var(--gray-color);
+        text-decoration: none;
+    }
+    &-list {
+        margin-bottom: 40px;
+        max-width: 274px;
+        line-height: calc(28 / 16);
+    }
+    &-heading {
+        font-size: clamp(1rem, 0.9671052631578947rem + 0.1644736842105263vw, 1.125rem);
+        font-weight: 500;
+        margin-bottom: 40px;
+        font-family: 'Inter', sans-serif;
+    }
+    &-content {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--gray-color);
+        padding: 25px 0 25px;
+        row-gap: 0.5rem;
+    }
+    strong{
+        font-weight: 600;
+    }
+    &-Copyright,
+    &-copy{
+        font-size: 13px;
+    }
+    @media screen and (max-width: 340px) {
+        &-heading{
+            margin-bottom: 1rem;
+        }
+        &-data{
+            row-gap: 2rem;
+            column-gap: 2rem;
+        }
+    }
+    @media screen and (min-width: 340px) {
+        &-data{
+            row-gap: 2rem;
+            column-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        &-heading{
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 460px) {
+        &-data{
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+    
+    @media screen and (min-width: 575px) {
+        &-data{
+            grid-template-columns: repeat(4, max-content);
+        }
+        &-content{
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        &-data{
+            column-gap: 4rem;
+        }
+    }
+    @media screen and (min-width: 1150px) {
+        &-data{
+            column-gap: 8rem;
+        }
+    }
+    
+}
