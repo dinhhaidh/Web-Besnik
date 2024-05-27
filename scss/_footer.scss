@@ -1,6 +1,7 @@
 .footer {
     padding: 67px 0 0;
     background-color: var(--grayf8);
+    overflow: hidden;
     &-data {
         // grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
         gap: 0 117px;

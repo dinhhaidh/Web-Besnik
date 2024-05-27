@@ -1,4 +1,5 @@
 .testmonials {
+    overflow: hidden;
     &-title {
         max-width: 563px;
         font-size: clamp(1.875rem, 1.513157894736842rem + 1.8092105263157896vw, 3.25rem);
