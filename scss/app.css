@@ -555,7 +555,7 @@ ul, li {
     width: 80px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 575px) {
   .nav__logo {
     width: 110px;
   }
