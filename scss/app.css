@@ -504,6 +504,9 @@ ul, li {
   font-weight: 500;
   transition: color 0.4s;
 }
+.nav-link:hover {
+  text-decoration: line-through;
+}
 .nav-imag {
   color: #fff;
   text-decoration: none;

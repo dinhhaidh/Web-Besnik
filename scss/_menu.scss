@@ -19,7 +19,11 @@
         color: var(--black-color);
         font-weight: 500;
         transition: color .4s;
+        &:hover{
+            text-decoration: line-through;
+        }
     }
+    
     &-imag{
         color: #fff;
         text-decoration: none;
